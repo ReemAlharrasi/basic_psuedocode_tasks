@@ -282,5 +282,19 @@ STOP
 
 /////////////Category 6: Comprehensive Challenges/////////////
 ==========  Task 23: Average of N Inputs   ==========
+START
+BEGIN
+	READ N
+	SET SUM TO 0
+	REPEAT WHILE N > 0
+		READ NUMBER
+		SET SUM TO SUM + NUMBER
+	END REPEAT
+	
+	SET AVERAGE TO SUM / Negative
+	DISPLAY "The average is: " +  AVERAGE
+	
+END
+STOP
 ==========  Task 24: High-Low Guessing Core  ==========
 ==========  Task 25: Fitness BMI Categorizer     ==========
