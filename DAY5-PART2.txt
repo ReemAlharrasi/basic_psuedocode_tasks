@@ -1,0 +1,20 @@
+==========  Task 161: Concatenate First and Last Name  ==========
+==========  Task 162: Check String Starts with "Hello"  ==========
+==========  Task 163: Find Last Index of Character  ==========
+==========  Task 164: Convert to Lowercase  ==========
+==========  Task 165: Remove All Spaces  ==========
+==========  Task 166: Check if String Contains Only Letters  ==========
+==========  Task 167: Count Words in Sentence  ==========
+==========  Task 168: Replace All Vowels with '?'  ==========
+==========  Task 169: Check if String is Palindrome (Case-Insensitive)  ==========
+==========  Task 170: Remove All Punctuation  ==========
+==========  Task 171: Count Uppercase Letters  ==========
+==========  Task 172: Count Lowercase Letters  ==========
+==========  Task 173: Count Only Letters (Alphabetic)  ==========
+==========  Task 174: Extract First Three Characters  ==========
+==========  Task 175: Extract Last Three Characters  ==========
+==========  Task 176: Remove First Character  ==========
+==========  Task 177: Remove Last Character  ==========
+==========  Task 178: Check if String is Empty or Only Whitespace  ==========
+==========  Task 179: Swap First and Last Characters  ==========
+==========  Task 180: Repeat String N Times  ==========

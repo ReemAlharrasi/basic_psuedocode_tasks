@@ -1,0 +1,39 @@
+/////////////Category 1: Registration & Lookup Systems/////////////
+
+==========  Task 201: Event Check-In System  ==========
+==========  Task 202: Student Subject Enrolment  ==========
+==========  Task 203: Username Registration Checker  ==========
+==========  Task 204: Library Book Loan System  ==========
+==========  Task 205: Hotel Room Booking Validator  ==========
+
+/////////////Category 2: Financial & Scoring Systems/////////////
+
+==========  Task 206: Shopping Cart & Discount Engine  ==========
+==========  Task 207: Employee Payroll Calculator  ==========
+==========  Task 208: Product Tax Invoice Builder  ==========
+==========  Task 209: Bank Account Transaction Processor  ==========
+==========  Task 210: Investment Portfolio Updater  ==========
+
+/////////////Category 3: Security & Access Control/////////////
+
+==========  Task 211: Login System with Lockout  ==========
+==========  Task 212: Comment Spam Filter  ==========
+==========  Task 213: Staff ID Zone Access Gate  ==========
+==========  Task 214: Network IP Access Controller  ==========
+==========  Task 215: Exam Seat Allocation System  ==========
+
+/////////////Category 4: Inventory & Logistics Systems/////////////
+
+==========  Task 216: Warehouse Dispatch Manager  ==========
+==========  Task 217: Airline Seat Boarding System  ==========
+==========  Task 218: Hospital Patient Triage  ==========
+==========  Task 219: Student Grade Report Builder  ==========
+==========  Task 220: Bus Route Passenger Loader  ==========
+
+/////////////Category 5: Capstone Integration Tasks/////////////
+
+==========  Task 221: Online Order Fulfilment System  ==========
+==========  Task 222: Smart Home Device Control Hub  ==========
+==========  Task 223: Course Prerequisite Enrolment Check  ==========
+==========  Task 224: Ride-Share Driver Matching System  ==========
+==========  Task 225: Support Ticket Assignment Engine  ==========
