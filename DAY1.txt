@@ -17,4 +17,12 @@ BEGIN
 	DISPLAY "The sum of the two numbers is: " + SUM
 END
 STOP
-==========  Task 2: Simple Addition  ==========
+==========  Task 3: Circle Perimeter Calculator  ==========
+START
+BEGIN
+	DISPLAY "Enter radius of the circle(cm): "
+	READ RADIUS
+	SET CIRCLE_PERIMETER TO 2*3.14*RADIUS
+	DISPLAY "The perimeter or the circle is: " + CIRCLE_PERIMETER
+END
+STOP
