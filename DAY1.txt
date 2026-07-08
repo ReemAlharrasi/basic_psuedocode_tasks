@@ -112,3 +112,19 @@ BEGIN
 	END IF
 END
 STOP
+
+/////////////Category 3: Logical Connectors & Nested Conditions/////////////
+
+==========  Task 10: Double-Factor Exam Entry  ==========
+START
+BEGIN
+	READ HAS_ATTENDANCE
+	READ HAS_ASSIGNMENT
+	
+	IF HAS_ATTENDANCE EQUALS "YES" AND HAS_ASSIGNMENT EQUALS "YES" THEN
+		DISPLAY "Exam Allowed"
+	ELSE
+		DISPLAY "Exam Barred"
+	END IF
+END
+STOP
