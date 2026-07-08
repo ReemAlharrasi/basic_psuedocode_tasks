@@ -64,3 +64,14 @@ BEGIN
 	END IF
 END
 STOP
+==========  Task 7: Speed Limit Alert  ==========
+START
+BEGIN
+	READ SPEED
+	IF Speed > 120 THEN
+		DISPLAY "Slow down!"
+	ELSE
+		DISPLAY "Safe speed!"
+	END IF
+END
+STOP
