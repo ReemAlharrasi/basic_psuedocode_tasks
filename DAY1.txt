@@ -1,0 +1,20 @@
+==========  Task 1: Favorite Color Greeting  ==========
+START
+BEGIN
+	DISPLAY "Input your favourate Color: "
+	READ COLOR
+	DISPLAY "Your favourate color is " + COLOR
+END
+STOP
+==========  Task 2: Simple Addition  ==========
+START
+BEGIN
+	DISPLAY "Enter 1st number: "
+	READ NUMBER1
+	DISPLAY "Enter 2nd number: "
+	READ NUMBER2
+	SET SUM TO NUMBER1 + NUMBER2
+	DISPLAY "The sum of the two numbers is: " + SUM
+END
+STOP
+==========  Task 2: Simple Addition  ==========
