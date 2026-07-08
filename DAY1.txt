@@ -26,3 +26,12 @@ BEGIN
 	DISPLAY "The perimeter or the circle is: " + CIRCLE_PERIMETER
 END
 STOP
+==========  Task 4: Days to Hours Converter  ==========
+START
+BEGIN
+	DISPLAY "Enter number of days: "
+	READ DAYS
+	SET HOURS TO DAYS*24
+	DISPLAY "Number of hours is: " + HOURS
+END
+STOP
