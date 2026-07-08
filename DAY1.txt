@@ -52,3 +52,15 @@ BEGIN
 	END IF
 END
 STOP
+==========  Task 6: Sign of a Number  ==========
+START
+BEGIN
+	DISPLAY "Enter the number: "
+	READ Number
+	IF Number > 0 THEN
+		DISPLAY "Positive Number!"
+	ELSE
+		DISPLAY "Negative Number!"
+	END IF
+END
+STOP
