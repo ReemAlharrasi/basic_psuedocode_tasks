@@ -223,7 +223,31 @@ END
 STOP
 /////////////Category 5: Conditional Repetition (While Loops)/////////////
 ==========  Task 19: Positive Number Enforcement   ==========
+START
+BEGIN
+	SET INPUT_VAL TO -1
+	
+	REPEAT WHILE INPUT_VAL <=0
+		READ INPUT_VAL
+	END REPEAT
+	
+	DISPLAY "Valid Input Received"
+END
+STOP
 ==========  Task 20: Digital Wallet Withdrawal Simulation  ==========
+START
+BEGIN
+	SET BALANCE TO 500
+	
+	REPEAT WHILE BALANCE > 0
+		READ WITHDRAW_AMT
+		SET BALANCE TO BALANCE-WITHDRAW_AMT
+		DISPLAY "remaining balance is: " + BALANCE
+	END REPEAT
+	
+	DISPLAY "Valid Input Received"
+END
+STOP
 ==========  Task 21: Shopping Cart Totalizer    ==========
 ==========  Task 22: Exponential Doubler Target    ==========
 
