@@ -249,6 +249,24 @@ BEGIN
 END
 STOP
 ==========  Task 21: Shopping Cart Totalizer    ==========
+START
+BEGIN
+	SET TOTAL_COST TO 0
+	SET PRICE TO -1
+	
+	REPEAT WHILE PRICE != 0
+		READ PRICE
+		
+		IF PRICE NOT EQUALS 0 THEN
+			SET TOTAL_COST TO TOTAL_COST + PRICE
+		END IF
+		
+		DISPLAY "total amount is: " + TOTAL_COST
+	END REPEAT
+	
+	DISPLAY "Valid Input Received"
+END
+STOP
 ==========  Task 22: Exponential Doubler Target    ==========
 
 /////////////Category 6: Comprehensive Challenges/////////////
