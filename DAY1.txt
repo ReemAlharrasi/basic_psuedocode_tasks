@@ -128,3 +128,36 @@ BEGIN
 	END IF
 END
 STOP
+==========  Task 11: Scholarship Eligibility  ==========
+START
+BEGIN
+	READ GPA
+	READ INCOME
+	
+	IF GPA GREATER THAN OR EQUAL TO 3.5 OR INCOME LESS THAN 20000 THEN
+		DISPLAY "Scholarship Approved"
+	ELSE
+		DISPLAY "Scholarship Denied"
+	END IF
+END
+STOP
+==========  Task 12: Range Validation   ==========
+==========  Task 13: Movie Ticket Tiering  ==========
+==========  Task 14: System Status Override  ==========
+
+/////////////Category 4: Fixed Repetition (Loops)/////////////
+==========  Task 15: Print Step Numbers   ==========
+==========  Task 16: Table of Squares  ==========
+==========  Task 17: Step-Down Backwards Sequence   ==========
+==========  Task 18: Score Accumulator   ==========
+
+/////////////Category 5: Conditional Repetition (While Loops)/////////////
+==========  Task 19: Positive Number Enforcement   ==========
+==========  Task 20: Digital Wallet Withdrawal Simulation  ==========
+==========  Task 21: Shopping Cart Totalizer    ==========
+==========  Task 22: Exponential Doubler Target    ==========
+
+/////////////Category 6: Comprehensive Challenges/////////////
+==========  Task 23: Average of N Inputs   ==========
+==========  Task 24: High-Low Guessing Core  ==========
+==========  Task 25: Fitness BMI Categorizer     ==========
