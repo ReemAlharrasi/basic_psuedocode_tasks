@@ -185,8 +185,32 @@ STOP
 
 /////////////Category 4: Fixed Repetition (Loops)/////////////
 ==========  Task 15: Print Step Numbers   ==========
+START
+BEGIN
+	REPEAT FROM I=1 TO 10
+		DISPLAY I
+	END REPEAT
+END
+STOP
 ==========  Task 16: Table of Squares  ==========
+START
+BEGIN
+	REPEAT FROM I=1 TO 10
+		DISPLAY I*I
+	END REPEAT
+END
+STOP
 ==========  Task 17: Step-Down Backwards Sequence   ==========
+START
+BEGIN
+	SET X TO 100
+	
+	REPEAT FROM I=1 TO 10
+		DISPLAY X
+		SET X TO X-5
+	END REPEAT
+END
+STOP
 ==========  Task 18: Score Accumulator   ==========
 
 /////////////Category 5: Conditional Repetition (While Loops)/////////////
