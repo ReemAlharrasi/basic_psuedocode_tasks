@@ -75,3 +75,15 @@ BEGIN
 	END IF
 END
 STOP
+==========  Task 8: Profit or Loss Tracker  ==========
+START
+BEGIN
+	READ COST_PRICE
+	READ SELLING_PRICE
+	IF SELLING_PRICE > COST_PRICE THEN
+		DISPLAY "Profit!"
+	ELSE
+		DISPLAY "Loss!"
+	END IF
+END
+STOP
