@@ -212,7 +212,15 @@ BEGIN
 END
 STOP
 ==========  Task 18: Score Accumulator   ==========
-
+START
+BEGIN
+	SET TOTAL TO 0
+	REPEAT FROM I=1 TO 5
+		READ SCORE
+		SET TOTAL TO TOTAL + SCORE
+	END REPEAT
+END
+STOP
 /////////////Category 5: Conditional Repetition (While Loops)/////////////
 ==========  Task 19: Positive Number Enforcement   ==========
 ==========  Task 20: Digital Wallet Withdrawal Simulation  ==========
