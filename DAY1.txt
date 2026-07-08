@@ -142,8 +142,46 @@ BEGIN
 END
 STOP
 ==========  Task 12: Range Validation   ==========
+START
+BEGIN
+	READ SCORE
+	READ INCOME
+	
+	IF SCORE GREATER THAN OR EQUAL TO 0 AND SCORE  LESS THAN OR EQUAL TO 100 THEN
+		DISPLAY "Valid Score"
+	ELSE
+		DISPLAY "Invalid Score"
+	END IF
+END
+STOP
 ==========  Task 13: Movie Ticket Tiering  ==========
+START
+BEGIN
+	READ AGE
+	
+	IF AGE LESS THAN  12  THEN
+		DISPLAY "Child ticket"
+	ELSE
+		IF AGE GREATER THAN 60 THEN
+			DISPLAY "Senior ticket"
+		ELSE
+			DISPLAY "Adult ticket"
+		END IF
+	END IF
+END
+STOP
 ==========  Task 14: System Status Override  ==========
+START
+BEGIN
+	READ IS_SYSTEM_BROKEN
+	
+	IF NOT IS_SYSTEM_BROKEN IS TRUE THEN
+		DISPLAY "System is functional!"
+	ELSE
+		DISPLAY "System is broken!"
+	END IF
+END
+STOP
 
 /////////////Category 4: Fixed Repetition (Loops)/////////////
 ==========  Task 15: Print Step Numbers   ==========
