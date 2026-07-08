@@ -321,3 +321,20 @@ BEGIN
 END
 STOP
 ==========  Task 25: Fitness BMI Categorizer     ==========
+START
+BEGIN
+	READ WEIGHT
+	READ HEIGHT
+	SET BMI TO WEIGHT/(HEIGHT*HEIGHT)
+	
+	IF BMI LESS THAN 18.5 THEN
+		DISPLAY "Underweight"
+	ELSE
+		IF BMI GREATER THAN 25 THEN
+			DISPLAY "Overweight"
+		ELSE
+			DISPLAY "Normal"
+		END IF
+	END IF
+END
+STOP
