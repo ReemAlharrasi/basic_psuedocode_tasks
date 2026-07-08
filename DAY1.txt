@@ -5,6 +5,7 @@ START
 BEGIN
 	DISPLAY "Input your favourate Color: "
 	READ COLOR
+	
 	DISPLAY "Your favourate color is " + COLOR
 END
 STOP
@@ -15,6 +16,7 @@ BEGIN
 	READ NUMBER1
 	DISPLAY "Enter 2nd number: "
 	READ NUMBER2
+	
 	SET SUM TO NUMBER1 + NUMBER2
 	DISPLAY "The sum of the two numbers is: " + SUM
 END
@@ -24,6 +26,7 @@ START
 BEGIN
 	DISPLAY "Enter radius of the circle(cm): "
 	READ RADIUS
+	
 	SET CIRCLE_PERIMETER TO 2*3.14*RADIUS
 	DISPLAY "The perimeter or the circle is: " + CIRCLE_PERIMETER
 END
@@ -33,6 +36,7 @@ START
 BEGIN
 	DISPLAY "Enter number of days: "
 	READ DAYS
+	
 	SET HOURS TO DAYS*24
 	DISPLAY "Number of hours is: " + HOURS
 END
@@ -45,7 +49,8 @@ START
 BEGIN
 	DISPLAY "Enter your age: "
 	READ AGE
-	IF AGE >= 18 THEN
+	
+	IF AGE GREATER THAN OR EQUAL TO 18 THEN
 		DISPLAY "Allowed to vote!"
 	ELSE
 		DISPLAY "Not allowed to vote!"
@@ -57,10 +62,15 @@ START
 BEGIN
 	DISPLAY "Enter the number: "
 	READ Number
-	IF Number > 0 THEN
+	
+	IF Number GREATER THAN 0 THEN
 		DISPLAY "Positive Number!"
 	ELSE
-		DISPLAY "Negative Number!"
+		IF Number LESS THAN 0 THEN
+			DISPLAY "Negative Number!"
+		ELSE
+			DISPLAY "ZerO!"
+		END IF
 	END IF
 END
 STOP
@@ -68,7 +78,8 @@ STOP
 START
 BEGIN
 	READ SPEED
-	IF Speed > 120 THEN
+	
+	IF Speed GREATER THAN 120 THEN
 		DISPLAY "Slow down!"
 	ELSE
 		DISPLAY "Safe speed!"
@@ -80,7 +91,21 @@ START
 BEGIN
 	READ COST_PRICE
 	READ SELLING_PRICE
-	IF SELLING_PRICE > COST_PRICE THEN
+	
+	IF SELLING_PRICE GREATER THAN COST_PRICE THEN
+		DISPLAY "Profit!"
+	ELSE
+		DISPLAY "Loss!"
+	END IF
+END
+STOP
+==========  Task 9: Match Stick Checker   ==========
+START
+BEGIN
+	READ NUMBER1
+	READ NUMBER2
+	
+	IF NUMBER1 EQUALS NUMBER2 THEN
 		DISPLAY "Profit!"
 	ELSE
 		DISPLAY "Loss!"
