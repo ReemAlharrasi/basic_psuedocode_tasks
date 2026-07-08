@@ -268,6 +268,17 @@ BEGIN
 END
 STOP
 ==========  Task 22: Exponential Doubler Target    ==========
+START
+BEGIN
+	READ NUMBER
+	
+	REPEAT WHILE NUMBER < 1000
+		DISPLAY NUMBER
+		SET NUMBER TO NUMBER * 2
+	END REPEAT
+	
+END
+STOP
 
 /////////////Category 6: Comprehensive Challenges/////////////
 ==========  Task 23: Average of N Inputs   ==========
