@@ -1,6 +1,18 @@
 /////////////Category 7: Multi-Stage Flag & State Tracking/////////////
 
 ==========  Task 26: Multi-Stage Assembly Line Gate  ==========
+START 
+BEGIN
+	QUALITY_CHECK SET TO "PENDING"
+	
+	READ WEIGHT_ERRORS
+	READ DIMENSION_ERRORS
+	
+	IF WEIGHT_ERRORS EQUALS 0 AND DIMENSION_ERRORS EQUALS 0 THEN
+		SET QUALITY_CHECK TO "PASSED"
+	END IF
+END 
+STOP 
 ==========  Task 27: Smart Thermostat Safety Valve  ==========
 ==========  Task 28: Credit Score & Down-Payment Evaluator  ==========
 ==========  Task 29: Vehicle Diagnostic Status Tree  ==========
