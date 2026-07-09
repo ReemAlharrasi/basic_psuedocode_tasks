@@ -128,6 +128,18 @@ BEGIN
 END
 STOP
 ==========  Task 39: Three-Variable Ascending Check  ==========
+START
+BEGIN
+	READ A 
+	READ B
+	READ C 
+	IF A GREATER LESS B AND B LESS THAN C THEN
+		DISPLAY "Perfect Order"
+	ELSE
+		DISPLAY "Out of Order"
+	END IF
+END
+STOP
 ==========  Task 40: Ride-Share Dynamic Surge Engine  ==========
 ==========  Task 41: Hotel Group Booking Matrix  ==========
 
