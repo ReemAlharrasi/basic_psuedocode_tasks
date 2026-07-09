@@ -15,13 +15,25 @@ BEGIN
 END
 STOP
 ==========  Task 77: Dynamic Name Collection  ==========
+START
+BEGIN
+	SET GUEST_LIST TO LIST
+	REPEAT WHILE SIZE OF GUEST_LIST LESS THAN 5
+		DISPLAY "ENTER GUEST NAME: "
+		READ Name
+		ADD NAME TO GUEST_LIST
+	END REPEAT
+END
+STOP
 ==========  Task 78: Minimum List Threshold Finder  ==========
+
 ==========  Task 79: List Reverse Copy Matrix  ==========
 ==========  Task 80: Dynamic List Popper Simulation  ==========
 
 /////////////Category 18: Uniqueness Tracking & Filters with Sets/////////////
 
 ==========  Task 81: Duplicate Email Rejection Engine  ==========
+
 ==========  Task 82: Exclusive Event Attendance Checker  ==========
 ==========  Task 83: Skill Matrix Intersection  ==========
 ==========  Task 84: Merged Inventory Cleanse  ==========
