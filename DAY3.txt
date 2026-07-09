@@ -94,7 +94,22 @@ STOP
 /////////////Category 16: Comprehensive Capstone Problem Sets/////////////
 
 ==========  Task 67: Restaurant Table Seating Engine  ==========
-
+START
+BEGIN
+	READ GUEST_COUNT
+	READ SECTION
+	
+	IF GUEST_COUNT  GREATER THAN 8 THEN
+		DISPLAY "Assign Grand Banquet Table"
+	ELSE
+		IF SECTION EQUALS "OUTDOOR" THEN
+			DISPLAY "Assign Terrace Patio Table"
+		ELSE
+			DISPLAY "Assign Standard Dining Booth"
+		END IF
+	END IF
+END
+STOP
 ==========  Task 68: Multi-Day Warehouse Order Shipping Aggregator  ==========
 ==========  Task 69: Customer Utility Level Discount Grid  ==========
 ==========  Task 70: Corporate Multi-Tier Expense Approver  ==========
