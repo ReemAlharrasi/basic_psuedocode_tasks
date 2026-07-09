@@ -110,6 +110,23 @@ STOP
 /////////////Category 10: Multi-Branch Financial & Sorting Engines/////////////
 
 ==========  Task 38: Multi-Tier Real Estate Commission  ==========
+START
+BEGIN
+	READ SALE_PRICE
+	
+	IF SALE_PRICE LESS THAN OR EQUALS TO 100000 THEN
+		SET COMMISSION TO SALE_PRICE * 0.05
+	ELSE
+		IF SALE_PRICE GREATER THAN 100000 AND SALE_PRICE LESS THAN OR EQUAL TO 500000 THEN
+			SET COMMISSION TO 5000 + ((SALE_PRICE - 100000) * 0.03 )
+		ELSE
+			SET COMMISSION TO 17000 + ((SALE_PRICE - 500000) * 0.02 )
+		END IF
+	END IF
+	
+	DISPLAY "Final commission is : " + COMMISSION
+END
+STOP
 ==========  Task 39: Three-Variable Ascending Check  ==========
 ==========  Task 40: Ride-Share Dynamic Surge Engine  ==========
 ==========  Task 41: Hotel Group Booking Matrix  ==========
