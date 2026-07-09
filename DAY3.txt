@@ -71,6 +71,22 @@ STOP
 /////////////Category 15: Nested Multi-Branch Operational Trees/////////////
 
 ==========  Task 63: Flight Luggage Weight & Dimension Surcharge  ==========
+START
+BEGIN
+	READ WEIGHT
+	READ DIMENSION
+	
+	IF WEIGHT GREATER THAN 23 AND DIMENSION GREATER THAN 158 THEN
+		DISPLAY "Surcharge Fee: 150"
+	ELSE
+		IF WEIGHT GREATER THAN 23 AND DIMENSION LESS THAN 158 THEN
+			DISPLAY "Surcharge Fee: 50"
+		ELSE
+			DISPLAY "No Extra Surcharge Fee Applied"
+		END IF
+	END IF
+END
+STOP
 ==========  Task 64: Real Estate Property Tax Categorizer  ==========
 ==========  Task 65: Movie Theater Snack Combo Discount Matrix  ==========
 ==========  Task 66: Automobile Insurance Risk Matcher  ==========
@@ -78,6 +94,7 @@ STOP
 /////////////Category 16: Comprehensive Capstone Problem Sets/////////////
 
 ==========  Task 67: Restaurant Table Seating Engine  ==========
+
 ==========  Task 68: Multi-Day Warehouse Order Shipping Aggregator  ==========
 ==========  Task 69: Customer Utility Level Discount Grid  ==========
 ==========  Task 70: Corporate Multi-Tier Expense Approver  ==========
