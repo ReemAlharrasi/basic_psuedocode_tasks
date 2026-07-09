@@ -10,10 +10,27 @@ BEGIN
 	
 	IF WEIGHT_ERRORS EQUALS 0 AND DIMENSION_ERRORS EQUALS 0 THEN
 		SET QUALITY_CHECK TO "PASSED"
+		DISPLAY "Route to Packaging"
+	ELSE
+		DISPLAY "Route to Scrap Yard"
 	END IF
 END 
 STOP 
 ==========  Task 27: Smart Thermostat Safety Valve  ==========
+START
+BEGIN
+	READ TEMPERATURE
+	READ SYSTEM_OVERRIDE
+	
+	IF TEMPERATURE GREATER THAN 45 AND NOT SYSTEM_OVERRIDE EQUALS "FORCE_OFF" THEN
+		DISPLAY "Activate Emergency Cooling"
+	ELSE 
+		IF TEMPERATURE LESS THAN 5 AND NOT SYSTEM_OVERRIDE EQUALS "FORCE_OFF" THEN
+			DISPLAY "Activate Emergency Heating"
+		END IF
+	END IF
+END
+STOP
 ==========  Task 28: Credit Score & Down-Payment Evaluator  ==========
 ==========  Task 29: Vehicle Diagnostic Status Tree  ==========
 
