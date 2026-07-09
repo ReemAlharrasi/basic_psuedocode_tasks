@@ -1,6 +1,19 @@
 /////////////Category 17: List Aggregations & Modifications/////////////
 
 ==========  Task 76: Product Price Inflation  ==========
+START
+BEGIN
+	SET PRICES TO LIST [10,20,30,40]
+	
+	REPEAT FROM I=1 TO SIZE OF PRICES
+		SET PRICES[I] TO PRICES[I] + 5
+	END REPEAT
+	
+	REPEAT FROM I=1 TO SIZE OF PRICES
+		DISPLAY PRICES[I]
+	END REPEAT
+END
+STOP
 ==========  Task 77: Dynamic Name Collection  ==========
 ==========  Task 78: Minimum List Threshold Finder  ==========
 ==========  Task 79: List Reverse Copy Matrix  ==========
