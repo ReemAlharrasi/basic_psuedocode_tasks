@@ -146,6 +146,29 @@ STOP
 /////////////Category 11: Ultimate Master Challenges/////////////
 
 ==========  Task 42: Flight Passenger Tier Allocator  ==========
+START
+BEGIN
+	READ FLIGHT_MILES
+	READ BAG_WEIGHT
+	
+	SET TIER TO "STANDARD"
+	
+	IF FLIGHT_MILES GREATER THAN 50000 THEN
+		SET TIER TO "PLATINUM"
+	ELSE
+		IF FLIGHT_MILES GREATER THAN OR EQUAL TO 20000  THEN FLIGHT_MILES LESS THAN OR EQUAL TO 50000 THEN
+			SET TIER TO "GOLD"
+		END IF
+	END IF
+	
+	IF TIER EQUALS TO "PLATINUM"  AND BAG_WEIGHT GREATER THAN 40 THEN
+		DISPLAY "Charge Excess Baggage Fee"
+	ELSE
+		IF TIER EQUALS TO "GOLD"  AND BAG_WEIGHT GREATER THAN 25 THEN
+			DISPLAY "Charge Excess Baggage Fee"
+	END IF
+END
+STOP
 ==========  Task 43: Grid Step Simulator Boundary  ==========
 ==========  Task 44: Automated Energy Grid Load Allocator  ==========
 ==========  Task 45: Complex Employee Payroll Engine  ==========
