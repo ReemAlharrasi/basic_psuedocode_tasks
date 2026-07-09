@@ -1,6 +1,22 @@
 /////////////Category 12: Advanced Flag Systems & Resource Tracking/////////////
 
 ==========  Task 51: Multi-Zone Smart Watering System  ==========
+START
+BEGIN
+	READ SOIL_MOISTURE
+	READ RAIN_PREDICTION
+	
+	IF SOIL_MOISTURE LESS THAN 30 AND RAIN_PREDICTION EQUALS "NO" THEN
+		DISPLAY "Activate Zone 1 and Zone 2 Sprinklers"
+	ELSE
+		IF SOIL_MOISTURE LESS THAN 30 AND RAIN_PREDICTION EQUALS "YES" THEN
+			DISPLAY "Delay Watering - Rain Expected"
+		ELSE
+			DISPLAY "System Idle"
+		END IF
+	END IF
+END
+STOP
 ==========  Task 52: Data Center Thermal Protection Core  ==========
 ==========  Task 53: Double-Auth Password Expiry Matrix  ==========
 ==========  Task 54: Shared Bandwidth Throttle Flag  ==========
