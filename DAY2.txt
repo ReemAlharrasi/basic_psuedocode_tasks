@@ -37,14 +37,73 @@ STOP
 /////////////Category 8: Advanced Aggregations & Math Filters/////////////
 
 ==========  Task 30: Average Score with Filter Exclusions  ==========
+START
+BEGIN
+	SET TOTAL_SCORE TO 0
+	SET VALID_COUNT TO 0
+	
+	REPEAT FROM I=1 TO 5
+		READ SCORE
+		IF SCORE GREATER THAN OR EQUAL TO 0 AND SCORE LESS THAN OR EQUAL TO 100 THEN 
+			SET TOTAL_SCORE TO TOTAL_SCORE + SCORE
+			SET VALID_COUNT TO VALID_COUNT + 1
+		END IF
+	END REPEAT
+	
+	SET AVERAGE TO TOTAL_SCORE / VALID_COUNT
+	DISPLAY "THE SCORE AVERAGE IS: " + AVERAGE
+END
+STOP
 ==========  Task 31: Dynamic Range Extent Tracking  ==========
+START
+BEGIN
+	SET NUM TO 0
+	SET MIN TO +INIFINITY
+	SET MAX TO -INFINITY
+	REPEAT WHILE NUM NOT EQUALS -999 
+		READ NUM
+		IF NUM GREATER THAN MAX THEN
+			SET MIN TO NUM
+		ELSE
+			IF NUM LESS THAN MIN THEN
+				SET MAX TO NUM
+			END IF
+		END IF
+		
+	END REPEAT
+END
+STOP
 ==========  Task 32: Compound Interest Target Countdown  ==========
 ==========  Task 33: Multi-Item Tax Classification  ==========
 
 /////////////Category 9: Controlled Variable Indeterminate Loops/////////////
 
 ==========  Task 34: Radioactive Decay Simulator  ==========
+START
+BEGIN
+	READ MASS
+	READ SAFE_LIMIT
+	
+	REPEAT WHILE MASS GREATER THAN SAFE_LIMIT 
+		SET MASS TO MASS / 2
+		DISPLAY MASS
+	END REPEAT
+END
+STOP
 ==========  Task 35: Digital Subscription Burn Rate  ==========
+START
+BEGIN
+	READ CREDIT_BALANCE
+	READ SUBSCRIPTION_COST
+	
+	REPEAT WHILE CREDIT_BALANCE GREATER THAN OR EQUAL TO SUBSCRIPTION_COST THEN
+		SET CREDIT_BALANCE TO CREDIT_BALANCE - SUBSCRIPTION_COST
+		DISPLAY "remaining balance is: " + CREDIT_BALANCE
+	END REPEAT
+	
+	DISPLAY "remaining balance is insufficient"
+END
+STOP
 ==========  Task 36: Dynamic Multiplier Escalation  ==========
 ==========  Task 37: Cargo Hold Weight Balancing  ==========
 
