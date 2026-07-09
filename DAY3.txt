@@ -27,7 +27,7 @@ STOP
 START
 BEGIN
 	SET TOTAL_VALUE TO 10
-	REPEAT FROM I=1 TO 5
+	REPEAT FROM I=1 TO 6
 		IF I GREATER THAN 3 THEN
 			SET TOTAL_VALUE TO TOTAL_VALUE * 3
 		ELSE
@@ -45,6 +45,25 @@ STOP
 /////////////Category 14: Value-Driven Indeterminate Whiles/////////////
 
 ==========  Task 59: Dynamic Battery Discharge Simulation  ==========
+START
+BEGIN
+	READ BATTERY_LIFE
+	
+	REPEAT WHILE BATTERY_LIFE GREATER THAN 0
+		READ APP_TYPE
+		
+		IF APP_TYPE EQUALS TO "VIDEO" THEN
+			SET BATTERY_LIFE TO BATTERY_LIFE - 15
+		ELSE
+			IF APP_TYPE EQUALS TO "TEXT" THEN
+				SET BATTERY_LIFE TO BATTERY_LIFE - 5
+			END IF
+		END IF
+		
+		DISPLAY BATTERY_LIFE
+	END REPEAT
+END
+STOP
 ==========  Task 60: Continuous Distance Tracking Target  ==========
 ==========  Task 61: Industrial Fluid Container Drain Valve  ==========
 ==========  Task 62: Game Damage Simulator and Shield Burn  ==========
