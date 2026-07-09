@@ -170,6 +170,35 @@ BEGIN
 END
 STOP
 ==========  Task 43: Grid Step Simulator Boundary  ==========
+START
+BEGIN
+	SET POS_X TO 0
+	SET POS_Y TO 0
+	
+	REPEAT FROM I=1 TO 5
+		READ DIRECTION
+		
+		IF DIRECTION EQUALS "UP" THEN
+			SET POS_Y TO POS_Y + 1
+		ELSE
+			IF DIRECTION EQUALS "DOWN" THEN
+				SET POS_Y TO POS_Y - 1
+			ELSE
+				IF DIRECTION EQUALS "RIGHT" THEN
+					SET POS_X TO POS_X + 1
+				ELSE
+					IF DIRECTION EQUALS "LEFT" THEN
+						SET POS_X TO POS_X + 1
+					END IF
+				END IF
+			END IF
+		END IF
+		
+		DISPLAY POS_X
+		DISPLAY POS_Y
+	END REPEAT
+END
+STOP
 ==========  Task 44: Automated Energy Grid Load Allocator  ==========
 ==========  Task 45: Complex Employee Payroll Engine  ==========
 ==========  Task 46: Gym Attendance Milestone Loyalty Tracker  ==========
