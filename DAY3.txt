@@ -24,6 +24,20 @@ STOP
 /////////////Category 13: Mathematical Compounding & Sequence Filters/////////////
 
 ==========  Task 55: Step-Multiplier Value Escalator  ==========
+START
+BEGIN
+	SET TOTAL_VALUE TO 10
+	REPEAT FROM I=1 TO 5
+		IF I GREATER THAN 3 THEN
+			SET TOTAL_VALUE TO TOTAL_VALUE * 3
+		ELSE
+			SET TOTAL_VALUE TO TOTAL_VALUE * 2
+		END IF
+	END REPEAT
+	
+	DISPLAY TOTAL_VALUE
+END
+STOP
 ==========  Task 56: Multi-Stage Sales Commission Deductor  ==========
 ==========  Task 57: Running Balance Variance Aggregator  ==========
 ==========  Task 58: Dynamic Investment Compounder  ==========
