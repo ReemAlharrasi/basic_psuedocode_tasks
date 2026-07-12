@@ -136,7 +136,23 @@ BEGIN
 END
 STOP
 ==========  Task 85: Multi-User Banned Keyword Filter  ==========
-
+START
+BEGIN
+	CREATE SET FLAG_WORDS
+	
+	ADD "scam" TO FLAG_WORDS
+	ADD "spam" TO FLAG_WORDS
+	ADD "bot" TO FLAG_WORDS
+	
+	READ USER_INPUT
+	
+	IF SET CONTAINS FLAG_WORDS USER_INPUT THEN 
+		DISPLAY "Comment Blocked"
+	ELSE
+		"Comment Approved"
+	END IF
+END
+STOP
 /////////////Category 19: Map Data Lookups & Record Tracking/////////////
 
 ==========  Task 86: Employee Phone Extension Directory  ==========
