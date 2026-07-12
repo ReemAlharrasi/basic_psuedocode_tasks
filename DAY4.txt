@@ -84,6 +84,22 @@ BEGIN
 END
 STOP
 ==========  Task 82: Exclusive Event Attendance Checker  ==========
+START
+BEGIN
+	CREATE SET DAY_ONE_ATTENDEES
+	CREATE SET DAY_TWO_ATTENDEES
+	
+	ADD "Sara" TO SET DAY_ONE_ATTENDEES 
+	ADD "Ali" TO SET DAY_ONE_ATTENDEES 
+	ADD "Sara" TO SET DAY_TWO_ATTENDEES 
+	ADD "Sama" TO SET DAY_TWO_ATTENDEES 
+	
+	SET DIFF TO DIFFERENCE OF SETS DAY_ONE_ATTENDEES AND NOT DAY_TWO_ATTENDEES
+	
+	DISPLAY SIZE OF DIFF
+	
+END
+STOP
 ==========  Task 83: Skill Matrix Intersection  ==========
 ==========  Task 84: Merged Inventory Cleanse  ==========
 ==========  Task 85: Multi-User Banned Keyword Filter  ==========
