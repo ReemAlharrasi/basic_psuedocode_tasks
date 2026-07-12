@@ -230,6 +230,25 @@ STOP
 /////////////Category 22: Advanced Algorithmic Multi-Collection Architectures/////////////
 
 ==========  Task 101: Movie Rating Average Tracker  ==========
+START
+BEGIN
+	CREATE MAP 
+	
+	SET MAP "Matilda" TO LIST[7,7,8,6]
+	SET MAP "WALLE" TO LIST[6,9,8,10]
+	
+	READ TITLE
+	SET SCORES TO GET FROM MAP MOVIE_RATINGS TITLE 
+	SET TOTAL TO 0
+	REPEAT FROM I=1 TO SIZE OF SCORES
+		SET TOTAL TO TOTAL + SCORES[I]
+	END REPEAT
+	
+	SET AVG TO TOTAL / SIZE OF SCORES
+	
+	DISPLAY "MOVIE AVERAGE RATINF IS " + AVG
+END
+STOP
 ==========  Task 102: Class Enrollment Limit System  ==========
 ==========  Task 103: Unique Attendance Registration Aggregate  ==========
 ==========  Task 104: Student Major Unique Set Filter  ==========
@@ -238,6 +257,20 @@ STOP
 /////////////Category 23: Continuous Input Multi-Variable Tracking/////////////
 
 ==========  Task 106: Dynamic Inventory Replenishment Loop  ==========
+START
+BEGIN
+	CREATE MAP INVENTORY
+	
+	REPEAT WHILE MAP SIZE OF INVENTORY < 5
+		DISPLAY "ENTER NAME"
+		READ NAME 
+		DISPLAY "ENTER QUANR
+		
+		READ COUNT
+		SET MAP INVENTORY NAME TO COUNT
+	END REPEAT
+END
+STOP
 ==========  Task 107: Unique Item Registry Milestone  ==========
 ==========  Task 108: Dynamic Login Attempt Locker  ==========
 ==========  Task 109: Shopping Voucher Deductor Balance  ==========
@@ -246,6 +279,26 @@ STOP
 /////////////Category 24: Set Operations & Boundary Conditions/////////////
 
 ==========  Task 111: Clean Guest List Difference Matrix  ==========
+START
+BEGIN
+	CREATE SET VIP 
+	CREATE SET WALK_IN
+	
+	ADD TO SET VIP "JONH"
+	ADD TO SET VIP "ASMA"
+	ADD TO SET VIP "SARA"
+	ADD TO SET WALK_IN "JONH"
+	ADD TO SET WALK_IN "ASMA"
+	ADD TO SET WALK_IN "SARA"
+	ADD TO SET WALK_IN "ALI"
+	ADD TO SET WALK_IN "SAMA"
+	ADD TO SET WALK_IN "MASA"
+	
+	CREATE SET UNINVITED
+	SET UNINVITED TO DIFFERENCE OF SETS WALK_IN AND VIP
+	DISPLAY UNINVITED
+END
+STOP
 ==========  Task 112: Gym Workout Day Consistency Index  ==========
 ==========  Task 113: Unique Device Network Tracker  ==========
 ==========  Task 114: Online Game Shared Guild Matrix  ==========
