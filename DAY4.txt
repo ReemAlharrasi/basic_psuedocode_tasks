@@ -67,7 +67,22 @@ STOP
 /////////////Category 18: Uniqueness Tracking & Filters with Sets/////////////
 
 ==========  Task 81: Duplicate Email Rejection Engine  ==========
-
+START
+BEGIN
+	CREATE SET REGISTERED_EMAILS
+	
+	REPEAT FROM I=1 TO 5
+		READ USER_EMAIL
+		
+		IF SET CONTAINS REGISTERED_EMAILS USER_EMAIL THEN
+			DISPLAY "Email already taken"
+		ELSE
+			ADD USER_EMAIL TO SET REGISTERED_EMAILS
+		END IF
+		
+	END REPEAT
+END
+STOP
 ==========  Task 82: Exclusive Event Attendance Checker  ==========
 ==========  Task 83: Skill Matrix Intersection  ==========
 ==========  Task 84: Merged Inventory Cleanse  ==========
