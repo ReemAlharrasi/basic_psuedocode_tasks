@@ -156,6 +156,22 @@ STOP
 /////////////Category 19: Map Data Lookups & Record Tracking/////////////
 
 ==========  Task 86: Employee Phone Extension Directory  ==========
+START
+BEGIN
+	CREATE MAP PHONES
+	
+	SET MAP PHONES "Alice" TO 101
+	SET MAP PHONES "Bob" TO 102
+	SET MAP PHONES "Charlie" TO 103
+	
+	READ NAME 
+	IF MAP CONTAINS PHONES NAME
+		DISPLAY "Phone Number: " + GET FROM MAP PHONES NAME
+	ELSE
+		DISPLAY "NAME NOT REGISTERED"
+	END IF	
+END
+STOP
 ==========  Task 87: Inventory Reorder Tracker  ==========
 ==========  Task 88: Student Grade Curve Booster  ==========
 ==========  Task 89: Capital City Quiz Engine  ==========
