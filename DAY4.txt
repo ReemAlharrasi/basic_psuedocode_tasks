@@ -180,6 +180,18 @@ STOP
 /////////////Category 20: Cross-Collection Transformations (Lists ↔ Sets)/////////////
 
 ==========  Task 91: List Unique ID Distiller  ==========
+START
+BEGIN
+	SET RAW_IDS TO LIST[11, 22, 11, 33, 22]
+	CREATE SET CLEAN_IDS
+	
+	REPEAT FROM I=1 TO SIZE OF RAW_IDS
+		ADD RAW_IDS[I] TO SET CLEAN_IDS
+	END REPEAT
+	
+	DISPLAY SET SIZE OF CLEAN_IDS
+END
+STOP
 ==========  Task 92: Blacklist Extraction Matrix  ==========
 ==========  Task 93: Set-to-List Iteration Bridge  ==========
 ==========  Task 94: Shopping Cart Duplicate Alert  ==========
@@ -188,6 +200,28 @@ STOP
 /////////////Category 21: Complex Map Tracking & Verification Trees/////////////
 
 ==========  Task 96: Bank Account Multi-Pin Security Check  ==========
+START
+BEGIN
+	CREATE MAP BANK_ACCOUNTS
+	
+	SET MAP BANK_ACCOUNTS "Ali" TO 123
+	SET MAP BANK_ACCOUNTS "Reem" TO 321
+	SET MAP BANK_ACCOUNTS "Sara" TO 112
+	SET MAP BANK_ACCOUNTS "Sama" TO 121
+	
+	READ ACC_ID
+	IF MAP CONTAINS BANK_ACCOUNTS ACC_ID THEN
+		READ ACC_PIN
+		IF MAP CONTAINS KEY BANK_ACCOUNTS ACC_PIN
+			DISPLAY "LOGIN SUCCESSFUL"
+		ELSE
+			DISPLAY "LOGIN FAILED:INVALID PIN"
+		END IF
+	ELSE
+		DISPLAY "LOGIN FAILED: INVALID ACCOUNT ID"
+	END IF
+END
+STOP
 ==========  Task 97: Game Character Stat Aggregator  ==========
 ==========  Task 98: Library Book Loan System Tracker  ==========
 ==========  Task 99: Map Value Presence Scanner  ==========
